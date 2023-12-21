@@ -2,6 +2,16 @@
 
 Responds with the OIDC endpoint based on a few config things.
 
+## Startup
+
+You'll need poetry, or make a virtualenv and pip install the repo.
+
+```shell
+git clone <repo url> && cd <repo name>
+poetry install
+poetry run uvicorn tailscale_webfinger:app
+```
+
 ## Environment vars
 
 - KANIDM_DOMAIN - the hostname of your Kanidm server
